@@ -1,0 +1,12 @@
+dn: olcOverlay={0}auditlog
+objectClass: olcOverlayConfig
+objectClass: olcAuditlogConfig
+olcOverlay: {0}auditlog
+olcAuditlogFile: /var/lib/ldap/log/gzinspqc.log
+structuralObjectClass: olcAuditlogConfig
+entryUUID: 0eaa4bcc-b7d5-1033-99d8-ab4914aab79c
+creatorsName: cn=config
+createTimestamp: 20140814080218Z
+entryCSN: 20140814080218.910610Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20140814080218Z

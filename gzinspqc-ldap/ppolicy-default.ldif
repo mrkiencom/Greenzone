@@ -1,0 +1,23 @@
+dn: ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: policies
+
+dn: cn=default,ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: device
+objectClass: pwdPolicyChecker
+objectClass: pwdPolicy
+cn: ppolicy
+pwdAttribute: userPassword
+pwdMinLength: 8
+pwdCheckQuality: 0
+pwdLockout: TRUE
+pwdMaxFailure: 3
+pwdLockoutDuration: 900
+pwdFailureCountInterval: 1800
+pwdMustChange: FALSE
+pwdMaxAge: 7776000
+pwdInHistory: 8
+pwdGraceAuthNLimit: 0
+pwdExpireWarning: 1209600

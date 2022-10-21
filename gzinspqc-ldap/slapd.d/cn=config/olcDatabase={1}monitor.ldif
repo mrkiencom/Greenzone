@@ -1,0 +1,19 @@
+dn: olcDatabase={1}monitor
+objectClass: olcDatabaseConfig
+olcDatabase: {1}monitor
+olcAccess: {0}to *  by dn.base="gidNumber=0+uidNumber=0,cn=peercred,cn=externa
+ l,cn=auth" read  by dn.base="cn=manager,dc=lcsatt,dc=sicpa-greenzone,dc=com" 
+ read  by * none
+olcAddContentAcl: FALSE
+olcLastMod: TRUE
+olcMaxDerefDepth: 15
+olcReadOnly: FALSE
+olcSyncUseSubentry: FALSE
+olcMonitoring: FALSE
+structuralObjectClass: olcDatabaseConfig
+entryUUID: 0eaa30f6-b7d5-1033-99d6-ab4914aab79c
+creatorsName: cn=config
+createTimestamp: 20140814080218Z
+entryCSN: 20140814080218.910610Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20140814080218Z

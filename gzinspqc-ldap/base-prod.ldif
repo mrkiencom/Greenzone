@@ -1,0 +1,88 @@
+version: 1
+
+dn: dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: domain
+objectClass: top
+dc: gzinspqc
+
+dn: ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+
+dn: ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Locations
+
+dn: cn=administrator,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: administrator
+gidNumber: 1500
+
+dn: cn=qc_operator,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: qc_operator
+gidNumber: 1501
+
+dn: cn=qc_customer_support,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: qc_customer_support
+gidNumber: 1502
+
+dn: cn=qc_analyst,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: qc_analyst
+gidNumber: 1503
+
+dn: cn=syncinsp,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: syncinsp
+gidNumber: 1504
+
+dn: cn=qc_manager,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: qc_manager
+gidNumber: 1505
+
+dn: ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: policies
+
+dn: cn=default,ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: device
+objectClass: pwdPolicyChecker
+objectClass: pwdPolicy
+cn: ppolicy
+cn: default
+pwdAttribute: userPassword
+pwdCheckQuality: 0
+pwdExpireWarning: 1209600
+pwdFailureCountInterval: 1800
+pwdGraceAuthNLimit: 0
+pwdInHistory: 8
+pwdLockout: TRUE
+pwdLockoutDuration: 900
+pwdMaxAge: 7776000
+pwdMaxFailure: 3
+pwdMinLength: 8
+pwdMustChange: TRUE
+
+dn: cn=Sicpa-CH,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: Sicpa-CH
+gidNumber: 2000

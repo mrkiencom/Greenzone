@@ -1,0 +1,13 @@
+dn: olcOverlay={1}ppolicy
+objectClass: olcPPolicyConfig
+olcOverlay: {1}ppolicy
+olcPPolicyDefault: cn=default,ou=Policies,dc=valmont,dc=sicpa-greenzone,dc=com
+olcPPolicyHashCleartext: TRUE
+olcPPolicyUseLockout: TRUE
+structuralObjectClass: olcPPolicyConfig
+entryUUID: 713ac0b6-b7ec-1033-8fa8-db9b94021708
+creatorsName: cn=config
+createTimestamp: 20140814104942Z
+entryCSN: 20140814104942.708400Z#000000#000#000000
+modifiersName: cn=config
+modifyTimestamp: 20140814104942Z

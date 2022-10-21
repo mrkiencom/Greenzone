@@ -1,0 +1,450 @@
+version: 1
+
+dn: dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: domain
+dc: gzinspqc
+
+dn: ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+
+dn: ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: People
+
+dn: ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Locations
+
+dn: cn=administrator,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: administrator
+gidNumber: 1500
+memberUid: admin
+
+dn: cn=qc_operator,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: qc_operator
+gidNumber: 1501
+memberUid: bob
+memberUid: dam
+memberUid: jesus
+memberUid: juda
+memberUid: birkhauser
+memberUid: carlucci
+memberUid: essentra
+memberUid: palladio
+memberUid: reynders
+memberUid: rondo
+memberUid: schreiner
+memberUid: zijiang
+memberUid: dabiao
+memberUid: assan
+memberUid: pakistan
+memberUid: elsa
+memberUid: maria
+memberUid: tobie
+memberUid: sven
+
+dn: cn=qc_customer_support,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: qc_customer_support
+gidNumber: 1502
+memberUid: christoph
+
+dn: cn=qc_analyst,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: qc_analyst
+gidNumber: 1503
+memberUid: manu
+
+dn: cn=syncinsp,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: syncinsp
+gidNumber: 1504
+memberUid: bob
+memberUid: dam
+memberUid: jesus
+memberUid: juda
+memberUid: birkhauser
+memberUid: carlucci
+memberUid: essentra
+memberUid: palladio
+memberUid: reynders
+memberUid: rondo
+memberUid: schreiner
+memberUid: zijiang
+memberUid: dabiao
+memberUid: assan
+memberUid: pakistan
+memberUid: elsa
+memberUid: maria
+memberUid: tobie
+memberUid: sven
+
+dn: ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: policies
+
+dn: cn=default,ou=Policies,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: pwdPolicy
+objectClass: pwdPolicyChecker
+objectClass: device
+objectClass: top
+cn: ppolicy
+cn: default
+pwdAttribute: userPassword
+pwdCheckQuality: 0
+pwdExpireWarning: 1209600
+pwdFailureCountInterval: 1800
+pwdGraceAuthNLimit: 0
+pwdInHistory: 8
+pwdLockout: TRUE
+pwdLockoutDuration: 900
+pwdMaxAge: 7776000
+pwdMaxFailure: 3
+pwdMinLength: 8
+pwdMustChange: TRUE
+
+dn: cn=CH,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: CH
+gidNumber: 2000
+memberUid: admin
+memberUid: bob
+memberUid: christoph
+memberUid: manu
+memberUid: gruber
+memberUid: elsa
+memberUid: tobie
+
+dn: uid=admin,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Joe The Admin
+sn: Admin
+givenName: Joe
+uid: admin
+userPassword:: e1NTSEF9THBvUTVpNVYwWDVVdUVyU2hsUnFaWkZOcWdPNmVid0I=
+
+dn: uid=bob,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Bob Operator
+sn: Operator
+givenName: Bob
+uid: bob
+userPassword:: e1NTSEF9MVZlS2xvUXZlTG12NXRoaEhvQ1REa3JwS09xRXlaNTc=
+
+dn: uid=christoph,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Christoph Sicpa
+sn: Sicpa
+givenName: Christoph
+uid: christoph
+userPassword:: e1NTSEF9SVlWL1A4K2dxVHVaekFrclp4Y3N1bCs2VkNLNFFoMTU=
+
+dn: uid=manu,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Manu Analyst
+sn: Analyst
+givenName: Manu
+uid: manu
+userPassword:: e1NTSEF9SldaNU4zekFtSFFxRkEzVHhUbExSZExkQngvOHBjdFo=
+
+dn: cn=BR,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: BR
+gidNumber: 2001
+memberUid: sven
+
+dn: cn=FR,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: FR
+gidNumber: 2002
+memberUid: dam
+memberUid: jesus
+memberUid: juda
+memberUid: maria
+
+dn: uid=dam,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Dam Snook
+sn: Snook
+givenName: Dam
+uid: dam
+userPassword:: e3NzaGF9QUhwRkhvRjNEY1hmeHgrS1dFYms5YXZjazAweHhybE81cWF5bWc9P
+ Q==
+
+dn: uid=jesus,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn:: SmVzw7pzIEZlcm7DoW5kZXogSGVybsOhbmRleg==
+sn:: RmVybsOhbmRleiBIZXJuw6FuZGV6
+givenName:: SmVzw7pz
+uid: jesus
+userPassword:: e3NzaGF9MFdKN2lBK3FuSjFvNHhvZXJGZDVMdzhoNTRrZkhraS84YnYrTEE9P
+ Q==
+
+dn: uid=juda,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Jud A
+sn: Jud
+givenName: A
+uid: juda
+userPassword:: e3NzaGF9T21zMXU5L3RRd1hkWmtDbDQxL0JPMC96R2thRjJwa1gvY3dCTmc9P
+ Q==
+
+dn: uid=gruber,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Gruber QC Manager
+sn: QC Manager
+givenName: Gruber
+uid: gruber
+userPassword:: e3NzaGF9Q3pIMFluZEVxZXN4cytYVFlqcmFsb0FsanlrVVN1dXFlTER2L0E9P
+ Q==
+
+dn: cn=qc_manager,ou=Groups,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: posixGroup
+objectClass: top
+cn: qc_manager
+gidNumber: 1501
+memberUid: gruber
+
+dn:: Y249Qmlya2jDpHVzZXIsb3U9TG9jYXRpb25zLGRjPWd6aW5zcHFjLGRjPXNpY3BhLWdyZWV
+ uem9uZSxkYz1jb20=
+objectClass: top
+objectClass: posixGroup
+cn:: Qmlya2jDpHVzZXI=
+gidNumber: 2001
+memberUid: birkhauser
+
+dn: uid=birkhauser,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn:: Qmlya2jDpHVzZXIgT3BlcmF0b3I=
+sn: Operator
+givenName:: Qmlya2jDpHVzZXI=
+uid: birkhauser
+userPassword:: e1NTSEF9V3JRSncydTlEK09VaVVDb3FVMzhqamYvQmxlTVFxa3Y=
+
+dn: cn=Carlucci,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Carlucci
+gidNumber: 2001
+memberUid: carlucci
+
+dn: cn=Essentra,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Essentra
+gidNumber: 2001
+memberUid: essentra
+
+dn: cn=Palladio,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Palladio
+gidNumber: 2001
+memberUid: palladio
+
+dn: cn=Reynders,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Reynders
+gidNumber: 2001
+memberUid: reynders
+
+dn: cn=Rondo,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Rondo
+gidNumber: 2001
+memberUid: rondo
+
+dn: cn=Schreiner,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Schreiner
+gidNumber: 2001
+memberUid: schreiner
+
+dn: cn=Zijiang,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Zijiang
+gidNumber: 2001
+memberUid: zijiang
+
+dn: cn=Dabiao,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Dabiao
+gidNumber: 2001
+memberUid: dabiao
+
+dn: cn=Assan-TK10,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Assan-TK10
+gidNumber: 2001
+memberUid: assan
+
+dn: cn=Pakistan-PK10,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: Pakistan-PK10
+gidNumber: 2001
+memberUid: pakistan
+
+dn: uid=carlucci,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Carlucci
+uid: carlucci
+userPassword:: e1NTSEF9NkVOaER2dU53RFErL240eUJtL0Q4U2xpYXBHSnhOaTY=
+
+dn: uid=essentra,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Essentra
+uid: essentra
+userPassword:: e1NTSEF9Qk1WclJxZUdLUkRnaldjVytNUStpdzZQK0dXMjM4bFM=
+
+dn: uid=palladio,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Palladio
+uid: palladio
+userPassword:: e1NTSEF9MDJoeFFPdUNmaEdJUWIrQ1ErQnFlSlF4VzZ4OGhmOC8=
+
+dn: uid=reynders,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Reynders
+uid: reynders
+userPassword:: e1NTSEF9SGRYSXNsbXJoWjlhaWJTbjZJOGRqZDBqTmNaa0h4am0=
+
+dn: uid=rondo,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Rondo
+uid: rondo
+userPassword:: e1NTSEF9MGlJVUFsbjVIM1hydWxURFpMUTVHL1FSdm9Cb2J5OWg=
+
+dn: uid=schreiner,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Schreiner
+uid: schreiner
+userPassword:: e1NTSEF9cm9BZE0wRjNUL2oyTFhISUNrcTRlMHk0cmN6YTQvQXk=
+
+dn: uid=zijiang,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Zijiang
+uid: zijiang
+userPassword:: e1NTSEF9WGx4andPQnBiS3g4cXpLRVdiOU0wRUZmQVM1czdqemQ=
+
+dn: uid=dabiao,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Dabiao
+uid: dabiao
+userPassword:: e1NTSEF9REZucUg3TGVvT3dCOEpsa0dMZytic3B5YnZVYVNBWTc=
+
+dn: uid=assan,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Assan-TK10
+uid: assan
+userPassword:: e1NTSEF9ZDkwZW1najUxdkRqVG91S2svei9SaWp4c2FySmNxT3g=
+
+dn: uid=pakistan,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Operator
+sn: Operator
+givenName: Pakistan-PK10
+uid: pakistan
+userPassword:: e1NTSEF9QVNnMzd6YUhGRmFOZSsxbVJKMFh6VnBVekJZb09HNTE=
+
+dn: uid=elsa,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Elsa
+sn: Elsa
+givenName: Elsa
+uid: elsa
+userPassword:: e1NTSEF9VEZ5SUNhZ21IQXg1amFwb3V0VEpwZCtJS2REWGVxZG4=
+
+dn: uid=maria,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Maria
+sn: Maria
+givenName: Maria
+uid: maria
+userPassword:: e1NTSEF9YUd1Mk1rZ1M3dXNtb2xEalZJR1NUa2wvck9rWEtMYVM=
+
+dn: uid=tobie,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: inetOrgPerson
+cn: Tobie
+sn: Tobie
+givenName: Tobie
+uid: tobie
+userPassword:: e1NTSEF9ZHJBSFJaSTM3Sms1Wno0b2NLaEdGVEJYc09zc2cyeHk=
+
+dn: uid=sven,ou=People,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: svensson
+sn: svensson
+givenName: sven
+uid: sven
+userPassword:: e1NTSEF9YzlzUDR5R1JCL1VPMFVCZVdSUmk0VkF6L1huQTRwbFg=
+
+dn: cn=VN,ou=Locations,dc=gzinspqc,dc=sicpa-greenzone,dc=com
+objectClass: top
+objectClass: posixGroup
+cn: vn
+gidNumber: 1999
+memberUid: vn
